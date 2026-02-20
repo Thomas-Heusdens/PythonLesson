@@ -1,6 +1,6 @@
 import json
 
-with open("files/questions.json", "r") as file:
+with open("../files/questions.json", "r") as file:
     content = file.read()
 
 #converts a string to a list

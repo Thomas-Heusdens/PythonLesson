@@ -1,6 +1,6 @@
 import time
 
-FILEPATH = "todos.txt"
+FILEPATH = "../task_manager/todos.txt"
 
 def get_todos():
     """Read the todos text file and return the to-do items."""

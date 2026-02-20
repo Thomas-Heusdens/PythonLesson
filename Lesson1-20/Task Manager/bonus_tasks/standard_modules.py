@@ -11,7 +11,7 @@ for filepath in myfiles:
         print(file.read())
 
 #Csv
-with open("files/weather.csv", "r") as file_csv:
+with open("../files/weather.csv", "r") as file_csv:
     data = list(csv.reader(file_csv))
 
 city = input("Enter a city:")
@@ -21,7 +21,7 @@ for row in data[1:]:
         print(row[1])
 
 #Shutil: creating zip files
-shutil.make_archive("output", "zip", "files")
+shutil.make_archive("output", "zip", "../files")
 
 #Webbrowser
 user_term = input("Enter a search term: ")
