@@ -1,6 +1,6 @@
 #from functions import get_todos, post_todos
 #import functions
-from modules import functions
+import functions
 
 while True:
     action = input("Enter add, show, edit, delete, or exit:")
