@@ -4,13 +4,12 @@ import os
 
 load_dotenv()
 
-
 def send_email(message):
     host = "smtp.gmail.com"
     port = 465
 
     username = "pilouthomas03@gmail.com"
-    password = os.getenv("EMAIL_PASSWORD")
+    password = os.getenv("GMAIL_APP_PASSWORD")
 
     receiver = "thomasheusdens@gmail.com"
     context = ssl.create_default_context()

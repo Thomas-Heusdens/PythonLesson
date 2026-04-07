@@ -1,6 +1,11 @@
 import requests
 from send_email import send_email
-api_key = "8d3a6b4394584d1683aa107621068d3e"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+api_key = os.getenv("API_KEY")
 topic = "tesla"
 url = f"https://newsapi.org/v2/everything?q={topic}&from=2026-03-06&sortBy=publishedAt&language=en&apiKey={api_key}"
 
